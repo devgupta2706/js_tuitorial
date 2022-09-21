@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ol id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Address</li>
+            <li>Email</li>
+            <li>Hobbies</li>
+        </ol>
+    </div>
+    <div class="container">
+        another container
+    </div>
+    <script>
+        let main=document.getElementById("main")
+        console.log(main)
+        let nav=document.getElementById("nav")
+        console.log(nav)
+        let containers=document.getElementsByClassName('container')
+        console.log(containers)
+        let sel=document.querySelectorAll('.container')
+        console.log(sel)
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script events</title>
+</head>
+<style>
+#btn{/*Styling given to the button containere*/
+    /* color: rgb(22, 4, 4); */
+    padding: 6px 4px;   /*size of the button inpixelx*/
+    color: rgb(255, 47, 0);  /* text color written inside button*/
+    border: 0.5px solid rgb(10, 13, 7); /*size of border around button*/
+    /* color: white; */
+    font-weight: bolder;
+    border-radius: 18px;  /*how circular the container is */
+    border-bottom: -9mm;
+    /* border-left: ; */
+    border-style: dotted;
+    border-collapse: calc();
+    box-shadow: 991mm blue;
+    cursor: pointer;  /*the mouse pointer become cursor hand symbol*/
+    
+}
+#Heading_1{
+  padding: .01px .1px;
+  color: aqua;
+  border: 0.1px solid black;
+  text-align: center;
+  border-radius: 56px;
+
+}
+</style>
+<body>
+    Browser events:
+    click
+    right click 
+    left click
+    mouse slide over
+    selected more than once 
+    focus on some file
+    <div class="container">
+        <h1 id="Heading_1">Lorem story</h1>
+        <p id="para">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste non similique rerum quia expedita, quas ex incidunt impedit quam porro deleniti repudiandae modi accusantium nemo. Possimus sunt dolore dolores. Velit dolor sapiente, fuga hic tempore amet cumque minima recusandae nostrum consequuntur laboriosam et voluptatibus delectus possimus dicta quae at, sunt mollitia voluptates! Assumenda a quaerat at perferendis omnis nobis perspiciatis, fugit illo ut! Repellendus ipsa asperiores iusto eaque tempora quam nobis temporibus odit. Quasi, ad? Minima, dolorem repellat commodi, assumenda facere quidem eos accusantium eius suscipit dolor maiores deserunt voluptatibus cumque a quia unde nobis deleniti quas delectus itaque? Cupiditate inventore nostrum illo eveniet culpa, excepturi numquam saepe, dolor distinctio laborum mollitia recusandae, ipsam ex deserunt esse sequi dolorum modi commodi veniam! Eius iste unde quos in pariatur id eum laboriosam? Aspernatur repellendus, iste dolor eaque non consequatur fuga animi qui inventore totam! Ab iusto voluptatum ipsa! Eius architecto amet ut quae repudiandae reiciendis officiis dolor nostrum cumque. Odio, cum totam omnis officia saepe placeat suscipit porro pariatur vel, deleniti sunt excepturi? Libero officiis vitae nihil sint omnis! Molestiae dolores qui molestias veritatis tenetur voluptatibus optio iure dicta tempora facere et amet aperiam, temporibus dolore natus praesentium nobis vitae doloribus aut eveniet debitis ut minus maiores odit. Hic fugiat placeat dolores omnis pariatur reprehenderit quaerat accusantium, eos cum voluptates neque facilis ut recusandae, expedita totam magni corporis commodi, officiis aperiam iusto praesentium! Hic.
+
+        </p>
+    </div>
+    <button id="btn" onclick="showhide()" >Show/Hide</button><!--on clicking the button on wbpage the function showhide() will be called-->
+<script>
+    let para=document.getElementById('para')
+    para.addEventListener('mousedown',function run() {
+        alert("Mouse down");
+    })
+    let count=0;
+    function showhide()
+    {   
+        let btn=document.getElementById('btn')
+        let para=document.getElementById('para')
+        count++
+        if(para.style.display!='none')
+        para.style.display='none';
+        else
+        {
+            para.style.display='block'
+        }
+        
+    }
+</script>
+</body>
+</html>

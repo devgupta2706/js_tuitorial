@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script strings functions</title>
+    <style>
+
+    </style>
+</head>
+<body background="/newproject/static2/image.jpg" alt="" height="100%" width="100%">
+    <div class="co">
+        askdfmknvgndfjnvdscxk 
+        <script>
+            var str="this is a string"
+            console.log(str)
+            var position=str.indexOf('is')
+            console.log(position)// position of first index 
+            var pos2=str.lastIndexOf('is')
+            console.log(pos2)// position of last index
+            // substring of a string 
+            var substr=str.slice(0,9)//printing upto 0 to 8
+            var sub2=str.substring(-2,9)  //it can accept neagtive values also
+            console.log(substr)
+            console.log(sub2)
+            var subb=str.substr(0,3)
+            console.log(subb)
+            var replaced =str.replace('string','Dev Gupta')// replace the word string by my name
+            console.log(str)
+            console.log(replaced)
+            
+       </script>
+    </div>
+    <div class="container2">
+        <script>
+            console.log("Container 2")
+             var str2="this is a string"
+             var temp=str2.toUpperCase()
+             console.log(temp)
+             var lower=temp.toLowerCase()
+             console.log(lower)
+             var newstr=temp.concat(" new string")
+             console.log(newstr)
+             str3="     this is     my    string    ok    "
+             console.log(str3.trim())//removes white spaces from starting and of the string
+             var char=str2.charAt(2)
+             var charcode=str2.charCodeAt(2)
+             console.log(char+" "+charcode)
+        </script>
+    </div>
+    <!-- <img src="/newproject/static2/image.jpg" alt="" height="100%" width="100%"> -->
+</body>
+</html>

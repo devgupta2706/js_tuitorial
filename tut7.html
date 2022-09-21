@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction along alert, confirm and prompt</title>
+</head>
+<body>
+    <div class="container">
+        This is page to get the knowledge of alert
+    </div>
+    <script>
+        let age=prompt("What is your age?","18");
+        if(age>=18)
+        {
+            alert("You are eligible to see pornhub.com\n")
+        }
+        else{
+            alert("You are not eligible to see pornhub.com\n")
+        }
+        alert("You are using our best services\n")
+        //it doesnot return any thing
+        let name=prompt("What is your name?","User-69");
+        // this is for user interactio n with our site
+        console.log(name)
+        let deletepost=confirm("Do you really want to delete?");
+        console.log(deletepost)
+        if(deletepost)
+        {
+            console.log("Your post deleted successfully")
+        }
+        else{
+            console.log("Your post doesn't deleted\n")
+        }
+    </script>
+</body>
+</html>
+
